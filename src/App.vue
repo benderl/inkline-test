@@ -14,17 +14,12 @@ export default {
       ],
     };
   },
-  methods: {
-    toggleColorMode() {
-      this.$inkline.toggleColorMode;
-    },
-  },
 }
 </script>
 
 <template>
   <i-container>
-    <i-row center middle>
+    <i-row center middle class="_padding-top:2">
       <i-column>
         <i-select
           v-model="selected"
@@ -33,7 +28,7 @@ export default {
         />
       </i-column>
     </i-row>
-    <i-row center middle>
+    <i-row center middle class="_padding-top:2">
       <i-column>
         <i-button
           @click="modalVisible = true"
@@ -42,13 +37,11 @@ export default {
         </i-button>
       </i-column>
     </i-row>
-    <i-row center middle>
+    <i-row center middle class="_padding-top:2">
       <i-column>
-        <i-button
-          @click="toggleColorMode"
-        >
-          Toggle color mode
-        </i-button>
+        Regular i-icon:
+        <i-icon name="ink-times" />
+        <i-icon name="ink-chevron-down" />
       </i-column>
     </i-row>
   </i-container>
